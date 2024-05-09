@@ -6,7 +6,7 @@ const text = "Passionate Frontend Developer | Transforming Ideas into Seamless a
 
 const TooltipPage = () => {
   return (
-    <div className="container">
+    <div className="tooltip-container">
         <Tooltip infoText={text}>
             <button className="btn">Testing button</button>
         </Tooltip>

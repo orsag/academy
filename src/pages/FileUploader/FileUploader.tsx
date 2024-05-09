@@ -4,7 +4,7 @@ import FileUpload from '../../components/FileUpload/FileUpload'
 
 const FileUploader = () => {
   return (
-    <div className="container">
+    <div className="uploader-container ">
         <FileUpload />
     </div>
   )

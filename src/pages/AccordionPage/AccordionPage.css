@@ -1,0 +1,15 @@
+.acc-container {
+    padding-top: 3rem;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #F2F6FA;
+    color: #000;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
