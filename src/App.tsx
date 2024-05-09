@@ -7,6 +7,7 @@ import FileUploader from './pages/FileUploader/FileUploader';
 import TooltipPage from './pages/TooltipPage/TooltipPage';
 import AccordionPage from './pages/AccordionPage/AccordionPage';
 import FormsPage from './pages/FormsPage/FormsPage';
+import ImageCropperPage from './pages/ImageCropperPage/ImageCropperPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="tooltip" element={<TooltipPage />} />
         <Route path="accordion" element={<AccordionPage />} />
         <Route path="forms" element={<FormsPage />} />
+        <Route path="cropper" element={<ImageCropperPage />} />
         {/* <Route path="about" element={<About />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="*" element={<NoMatch />} /> */}
