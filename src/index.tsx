@@ -2,17 +2,59 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import './App.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import RootLayout from './RootLayout';
+import Home from './pages/Home/Home';
+import FileUploader from './pages/FileUploader/FileUploader';
+import TooltipPage from './pages/TooltipPage/TooltipPage';
+import AccordionPage from './pages/AccordionPage/AccordionPage';
+import FormsPage from './pages/FormsPage/FormsPage';
+import ImageCropperPage from './pages/ImageCropperPage/ImageCropperPage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <RootLayout />,
+    errorElement: <NotFoundPage />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: '/file-uploader',
+        element: <FileUploader />,
+      },
+      {
+        path: '/tooltip',
+        element: <TooltipPage />,
+      },
+      {
+        path: '/accordion',
+        element: <AccordionPage />,
+      },
+      {
+        path: '/forms',
+        element: <FormsPage />,
+      },
+      {
+        path: '/cropper',
+        element: <ImageCropperPage />,
+      }
+    ]
+  }
+]);
+
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

@@ -1,10 +1,22 @@
 export const projects = [
     {
-        name: 'upload-file-with-progress-bar',
+        name: 'File uploader',
         route: '/file-uploader',
     },
     {
-        name: 'expandable-card',
-        route: '/expandable-card',
+        name: 'Tooltip',
+        route: '/tooltip',
+    },
+    {
+        name: 'Accordion',
+        route: '/accordion',
+    },
+    {
+        name: 'Forms',
+        route: '/forms',
+    },
+    {
+        name: 'Image Cropper',
+        route: '/cropper',
     }
 ];

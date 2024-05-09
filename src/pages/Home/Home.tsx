@@ -5,7 +5,7 @@ import { projects } from './data';
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className="home-container">
         <h1>List of projects</h1>
         <ul>
           {projects.map(item => (
