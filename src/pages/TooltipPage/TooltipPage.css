@@ -1,0 +1,19 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F6FA;
+    color: #000;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #26AFBE;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 25px;
+    cursor: pointer;
+  }

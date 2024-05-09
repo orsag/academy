@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import RootLayout from './RootLayout';
 import Home from './pages/Home/Home';
 import FileUploader from './pages/FileUploader/FileUploader';
+import TooltipPage from './pages/TooltipPage/TooltipPage';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="file-uploader" element={<FileUploader />} />
+        <Route path="tooltip" element={<TooltipPage />} />
         {/* <Route path="about" element={<About />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="*" element={<NoMatch />} /> */}
